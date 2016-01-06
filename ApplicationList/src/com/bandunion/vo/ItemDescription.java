@@ -2,11 +2,11 @@ package com.bandunion.vo;
 
 public class ItemDescription {
 	private String appName;
-	private String cls;
+	private Class<?> cls;
 	
 	public ItemDescription(){}
 	
-	public ItemDescription(String appName, String cls){
+	public ItemDescription(String appName, Class<?> cls){
 		this.appName = appName;
 		this.cls = cls;
 	}
@@ -15,7 +15,7 @@ public class ItemDescription {
 		return appName;
 	}
 
-	public String getCls() {
+	public Class<?> getCls() {
 		return cls;
 	}
 }
