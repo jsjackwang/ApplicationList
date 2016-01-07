@@ -1,22 +1,25 @@
 package com.bandunion.vo;
 
+
 public class ItemDescription {
 	private String appName;
-	private Class<?> cls;
+	private String className;
 	
 	public ItemDescription(){}
 	
-	public ItemDescription(String appName, Class<?> cls){
+	public ItemDescription(String appName, String className){
 		this.appName = appName;
-		this.cls = cls;
+		this.className = ("com.bandunion.applist." + className).trim();
 	}
 
 	public String getAppName() {
 		return appName;
 	}
 
-	public Class<?> getCls() {
-		return cls;
+	public String getClassName() {
+		return className;
 	}
+	
+	
 }
 

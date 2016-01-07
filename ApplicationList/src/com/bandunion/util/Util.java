@@ -1,11 +1,10 @@
 package com.bandunion.util;
 
-import android.app.Activity;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
+import android.widget.Toast;
 
 import com.bandunion.app.BandUnionApplication;
 
@@ -41,13 +40,16 @@ public class Util {
 		}
 	}
 	
-	public static View Inflate(int layoutId){
-		return View.inflate(getContext(), layoutId, null);
+	public static void showToastLong(String info){
+		Toast.makeText(getContext(), info, Toast.LENGTH_LONG).show();
 	}
 	
-	public static void startActivity(Activity context, Class<?> cls){
-		Intent intent = new Intent(context, cls);
-		context.startActivity(intent);
+	public static void showToastShort(String info){
+		Toast.makeText(getContext(), info, Toast.LENGTH_SHORT).show();
+	}
+	
+	public static View Inflate(int layoutId){
+		return View.inflate(getContext(), layoutId, null);
 	}
 	
 	public static void log(String TAG, String info){

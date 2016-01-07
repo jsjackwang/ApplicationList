@@ -3,16 +3,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
+
+    <include layout="@layout/main_item_title"/>
     
     <Button 
-        android:id="@+id/main_listview_item"
+        android:id="@+id/tabindicator_btn_csdn"
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:textColor="#aa000000"
-        android:text="ListDatas"
-        android:textSize="20sp"
-        android:focusable="false"
-        android:clickable="false"
+        android:text="@string/csdn_framework"
         android:background="@drawable/main_listview_item_btn_selector"
         />
+
 </LinearLayout>

@@ -25,8 +25,7 @@ public class RecyclerViewLayoutManagerActivity extends Activity{
 		initViews();
 		initDatas();
 		recyclerView.setLayoutManager(new LinearLayoutManager(this));
-//		recyclerView.setAdapter(new Adapter<ViewHolder>() {
-//		});
+//		recyclerView.setAdapter(new RecyclerViewAdapter());
 //		recyclerView.addItemDecoration(decor);
 //		recyclerView.setAnimation(animation);
 	}

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">ApplicationList</string>
-    <string name="recyclerview_listview">recyclerview listview</string>
+
+    <string name="app_name">DemoList</string>
+    <string name="recyclerview_listview">RecyclerViewList</string>
+    <string name="csdn_framework">TabPageIndicatorList</string>
+    <string name="helloworld">helloworld</string>
+    <string name="csdn_title">CSDN咨询</string>
+
 </resources>

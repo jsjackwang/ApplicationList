@@ -4,6 +4,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical" >
     
+    <include layout="@layout/main_item_title"/>
+    
 	<Button 
 	    android:id="@+id/recyclerview_btn_listview"
 	    android:layout_height="wrap_content"

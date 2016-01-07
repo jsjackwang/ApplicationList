@@ -9,25 +9,41 @@
         android:targetSdkVersion="21" />
 
     <application
+        android:name="com.bandunion.app.BandUnionApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" 
-        android:name="com.bandunion.app.BandUnionApplication"
-        >
+        android:theme="@style/AppTheme" >
         <activity
             android:name="com.bandunion.activity.MainActivity"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.Light.NoTitleBar"
-            >
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.bandunion.item.recyclerview.RecyclerViewDemoActivity"></activity>
+        <activity android:name="com.bandunion.item.recyclerview.RecyclerViewDemoActivity" >
+            <intent-filter>
+                <action android:name="com.bandunion.applist.RECYCLERVIEWDEMOACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.bandunion.item.recyclerview.RecyclerViewLayoutManagerActivity" >
+        </activity>
+        <activity android:name="com.bandunion.item.tabindicator.TabIndicatorActivity" >
+            <intent-filter>
+                <action android:name="com.bandunion.applist.TABINDICATORACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.bandunion.item.tabindicator.CSDNFrameworkActivity"
+            android:theme="@style/MyTheme" >
+        </activity>
     </application>
 
 </manifest>
