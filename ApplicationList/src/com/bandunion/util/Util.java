@@ -40,12 +40,22 @@ public class Util {
 		}
 	}
 	
-	public static void showToastLong(String info){
-		Toast.makeText(getContext(), info, Toast.LENGTH_LONG).show();
+	public static void showToastLong(final String info){
+		runInMainThread(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(getContext(), info, Toast.LENGTH_LONG).show();
+			}
+		});
 	}
 	
-	public static void showToastShort(String info){
-		Toast.makeText(getContext(), info, Toast.LENGTH_SHORT).show();
+	public static void showToastShort(final String info){
+		runInMainThread(new Runnable() {
+			@Override
+			public void run() {
+				Toast.makeText(getContext(), info, Toast.LENGTH_SHORT).show();				
+			}
+		});
 	}
 	
 	public static View Inflate(int layoutId){
