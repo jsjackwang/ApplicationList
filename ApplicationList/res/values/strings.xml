@@ -6,5 +6,6 @@
     <string name="csdn_framework">TabPageIndicatorList</string>
     <string name="helloworld">helloworld</string>
     <string name="csdn_title">CSDN咨询</string>
+    <string name="basewidget_btn_webview">WebView</string>
 
 </resources>

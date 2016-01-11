@@ -1,6 +1,8 @@
 package com.bandunion.util;
 
+import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
@@ -66,5 +68,10 @@ public class Util {
 		if (isLog) {
 			Log.i(TAG, info);
 		}
+	}
+	
+	public static void startActivity(Activity activity, Class<? extends Activity> cls){
+		Intent intent = new Intent(activity, cls);
+		activity.startActivity(intent);
 	}
 }

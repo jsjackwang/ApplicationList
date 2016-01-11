@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
     	Util.log(TAG, "listDatas init");
     	listDatas.add(new ItemDescription("RecyclerViewDemo", "RECYCLERVIEWDEMOACTIVITY"));
     	listDatas.add(new ItemDescription("TabPageIndicatorDemo", "TABINDICATORACTIVITY"));
+    	listDatas.add(new ItemDescription("AndroidBaseWidgetUseDemo", "ANDROIDBASEWIDGETUSEACTIVITY"));
     }
   
 	@Override

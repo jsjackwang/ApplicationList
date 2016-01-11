@@ -44,10 +44,18 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.bandunion.item.basewidget.AndroidBaseWidgetUseActivity" >
+            <intent-filter>
+                <action android:name="com.bandunion.applist.ANDROIDBASEWIDGETUSEACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.bandunion.item.tabindicator.CSDNFrameworkActivity"
             android:theme="@style/MyTheme" >
         </activity>
+        <activity android:name="com.bandunion.item.basewidget.WebViewActivity"></activity>
     </application>
 
 </manifest>
